@@ -1,0 +1,90 @@
+html {
+  font-family:  cursive;
+  background-color: darkcyan;
+}
+body {
+  background: #55d6f4;
+  color: #313e48;
+}
+img {
+  width:6vw;
+}
+.continer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse
+}
+#boxown{
+  width: 50vw;
+  height: 15vw;
+  margin-right: 20px;
+}
+.continer2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.box {
+  height: 13vw;
+  margin: 1em auto;
+  background: #f0f0f0;
+  padding: 2em 0;
+  width: 12vw;
+  border-radius: 3px;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
+}
+.weather .icon {
+  position: relative;
+  margin: 0 auto;
+}
+.spin {
+  text-align: center; 
+}
+.bubble.black {
+  background-color: #55d6f4;
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  padding: 0px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.bubble.black:after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 14px;
+  border-style: solid;
+  border-width: 29px 15px 0;
+  border-color: #55d6f4 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  transform: rotate(30deg);
+}
+.spin img {
+  animation: spin 5s linear infinite;
+  animation-play-state: paused;
+}
+.box:hover .spin img {
+  animation-play-state: running;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.h1{
+  text-align: center;
+  margin-top: 1vw;
+  color: red;
+  font-size: 1vw;
+  font-family:cursive;
+
+}
+#City{
+  border-radius: 1vw;
+  font-family:  cursive;
+  font-size:  2vw;
+  color: blue;
+}
